@@ -1,0 +1,29 @@
+<mat-card class="example-card">
+    <mat-card-content>
+        <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)" >
+            <p>
+              <label for="username">User Name</label>
+              &nbsp;
+              <input type="text" id="username" name="username" ngModel>
+            </p>
+            <p>
+              <label for="password">Password</label>
+              &nbsp;
+              <input type="password" id="password" name="password" ngModel>
+            </p>
+            <p>
+              <label for="email">Email</label>
+              &nbsp;
+              <input type="email" id="email" name="email" ngModel>
+            </p>
+            <p>
+              <label for="id">ID</label>
+              &nbsp;
+              <input type="number" id="id" name="id" ngModel>
+            </p>
+            <mat-card-actions>
+                <button mat-raised-button color="primary" type="submit">Submit</button>
+            </mat-card-actions>
+          </form>
+    </mat-card-content>
+</mat-card>

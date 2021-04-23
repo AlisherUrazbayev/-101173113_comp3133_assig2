@@ -1,0 +1,16 @@
+<h2>Your bookings listed below:</h2>
+<div *ngFor="let item of bookings">
+  <mat-card class="example-card">
+    <mat-card-content>
+      <mat-card-title>Hotel ID: {{item.hotel_id}}</mat-card-title>
+      <p>Day Booked: {{item.booking_date}}</p>
+      <p>Start: {{item.booking_start}}</p>
+      <p>End: {{item.booking_end}}</p>
+    </mat-card-content>
+  </mat-card>
+  <br>
+</div>
+
+
+
+
